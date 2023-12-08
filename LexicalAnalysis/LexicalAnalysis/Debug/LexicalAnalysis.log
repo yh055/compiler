@@ -1,0 +1,91 @@
+﻿  HashTableReserves.c
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(10,24): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(10,24): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(10,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(10,32): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(11,26): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(11,26): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(11,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(11,36): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(12,26): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(12,26): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(12,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(12,36): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(13,27): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(13,27): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(13,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(13,38): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(14,30): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(14,30): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(14,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(14,44): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(15,28): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(15,28): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(15,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(15,40): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(16,27): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(16,27): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(16,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(16,38): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(17,25): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(17,25): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(17,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(17,34): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(18,23): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(18,23): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(18,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(18,30): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(19,23): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(19,23): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(19,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(19,30): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(20,23): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(20,23): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(20,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(20,30): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(21,23): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(21,23): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(21,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(21,30): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(22,27): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(22,27): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(22,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(22,38): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(23,27): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(23,27): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(23,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(23,38): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(24,23): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(24,23): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(24,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(24,30): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(25,23): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(25,23): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(25,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(25,30): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(26,23): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(26,23): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(26,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(26,30): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(27,23): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(27,23): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(27,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(27,30): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(28,24): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(28,24): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(28,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(28,32): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(29,24): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(29,24): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(29,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(29,32): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(30,23): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(30,23): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(30,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(30,30): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(31,23): error C2057: expected constant expression
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(31,23): error C2466: cannot allocate an array of constant size 0
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(31,1): error C2040: 'Reserves': 'int [0]' differs in levels of indirection from 'char [50][20]'
+C:\Users\יעל חדד\Pictures\פרויקט בה\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(31,30): error C2075: 'Reserves': array initialization requires a brace-enclosed initializer list
+  Main.c
+  Generating Code...
