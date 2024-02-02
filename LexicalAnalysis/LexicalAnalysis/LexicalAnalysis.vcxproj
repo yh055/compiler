@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -22,8 +22,12 @@
     <ClCompile Include="automaton.c" />
     <ClCompile Include="HashTableReserves.c" />
     <ClCompile Include="Main.c" />
-    <ClCompile Include="Pattern.c" />
-    <ClCompile Include="Token.c" />
+    <ClCompile Include="string.h" />
+    <ClCompile Include="HashTableReservesStruct.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aotomaton.h" />
+    <ClInclude Include="HashTableReserves.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

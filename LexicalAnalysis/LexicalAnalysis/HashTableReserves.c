@@ -1,65 +1,90 @@
-#define LemReserves 100
-#include <string.h>
-#include <stdio.h>
+#include "HashTableReserves.h"
 
+
+//פונקציה שקוראת מקובץ סוגי הטוקנים וממלאה במערך
+void FillingTypes() {
+	int sizeTypes = 10;
+	types = (char**)malloc(sizeTypes * sizeof(char[20]));
+	int i=0;
+	if (types == NULL) {
+		printf("Memory not allocated\n");
+		exit(1);
+	}
+	char type[30];
+	FILE* file=NULL;
+	errno_t e = fopen_s(&file, "C:/Users/Public/Pictures/types.txt", "rt");
+	if (e!=0) {
+		printf("Error open file\n");
+		exit(1);
+	}
+	while (fscanf_s(file, "%s", &type) != EOF) {
+		if (i == sizeTypes) {
+			sizeTypes = sizeTypes * 2;
+			types = (char**)realloc(&types, sizeTypes * sizeof(char[20]));
+			if (types == NULL) {
+				printf("Memory not allocated\n");
+				exit(1);
+			}
+		}
+		myStrcpy(types[i], type);
+		i++;
+
+	}
+}
+//פונקצית הגיבוב
 int HashFunc(char* word)
 {
-	return (int)word % LemReserves;
-	
+	int num=0, i = 0, j = 1;
+
+	while (word[i]) {
+		num += (int)word[i++] * j;
+		j *= 10;
+	}
+	return num % LemReserves;
+
 }
-typedef struct Uniform
-{
-	char* str;
-	Uniform* next;
-}Uniform;
-typedef struct original
-{
-	char* str;
-	//מצביע למקום בקוד
-	original* next;
-}original;
-void HashTable(){
+
+void InHash(char* word, int type) {
+
+	if (HashUniform[HashFunc(word)] == NULL) {
+		HashUniform[HashFunc(word)] = (UniformPtr)malloc(1 * sizeof(UniformRec));
+		if (HashUniform[HashFunc(word)] == NULL) {
+			printf("Memory not allocated\n");
+			exit(1);
+		}
+		myStrcpy(HashUniform[HashFunc(word)]->str , word);
+		HashUniform[HashFunc(word)]->type = type;
+		HashUniform[HashFunc(word)]->next = (UniformPtr)malloc(1 * sizeof(UniformRec));
+	}
+	else
+	{
+		UniformPtr next1 = HashUniform[HashFunc(word)]->next;
+		while (next1)
+			next1->next;
+		myStrcpy(&next1->str , word);
+		next1->type = type;
+		next1->next = NULL;
+
+	}
+
+}
+// פונקציה הממלאה את טבלת הגיבוב של 
+void HashTable() {
+	char word[10];
+	int num;
+	FILE* file=NULL;
+	for (int i = 0; i <= 100; i++) {
+		HashUniform[i] = NULL;
+	}
+	errno_t e= fopen_s(&file, "C:/Users/Public/Pictures/reserves.txt", "rt");
+	if (e!=0) {
+		printf("Error open file\n");
+		exit(1);
+	}
 	
-	Uniform HashUniform[100];
-	HashUniform[HashFunc("else")].str="else";
-	HashUniform[HashFunc("if")].str = "if";
-	HashUniform[HashFunc("not")].str = "not";
-	HashUniform[HashFunc("fun")].str = "fun";
-	HashUniform[HashFunc("loop")].str = "loop";
-	HashUniform[HashFunc("return")].str = "return";
-	HashUniform[HashFunc("print")].str = "print";
-	HashUniform[HashFunc("input")].str = "input";
-	HashUniform[HashFunc("global")].str = "global"; 
-	HashUniform[HashFunc("define")].str = "define";
-	HashUniform[HashFunc("static")].str = "static";
-	HashUniform[HashFunc("class")].str = "class"; 
-	HashUniform[HashFunc("next")].str = "next"; 
-	HashUniform[HashFunc("break")].str = "break";
-	HashUniform[HashFunc(")")].str = ")";
-	HashUniform[HashFunc("(")].str = "(";
-	HashUniform[HashFunc("}")].str = "}";
-	HashUniform[HashFunc("{")].str = "{";
-	HashUniform[HashFunc("]")].str = "]";
-	HashUniform[HashFunc("[")].str = "[";
-	HashUniform[HashFunc("true")].str = "true";
-	HashUniform[HashFunc("false")].str = "false"; 
-	HashUniform[HashFunc("=")].str = "=";
-	HashUniform[HashFunc("!=")].str = "!=";
-	HashUniform[HashFunc("<")].str = "<";
-	HashUniform[HashFunc(">")].str = ">";
-	HashUniform[HashFunc("<=")].str = "<=";
-	HashUniform[HashFunc(">=")].str = ">=";
-	HashUniform[HashFunc(",")].str = ",";
-	HashUniform[HashFunc(";")].str = ";";
-	HashUniform[HashFunc("/n")].str = "/n";
-	HashUniform[HashFunc("/t")].str = "/t";
-	HashUniform[HashFunc("+")].str = "+"; 
-	HashUniform[HashFunc("-")].str = "-";
-	HashUniform[HashFunc("*")].str = "*";
-	HashUniform[HashFunc("/")].str = "/";
-	HashUniform[HashFunc("%")].str = "%";
-	HashUniform[HashFunc("&")].str = "&";
-	HashUniform[HashFunc("|")].str = "|";
-
-
+	while (fscanf_s(&file, "%s %d", word, &num) != EOF) {
+		
+		InHash(word, num);
+	}
+	fclose(&file);
 }

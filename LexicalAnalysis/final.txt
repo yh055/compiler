@@ -1,0 +1,4 @@
+1 id 0
+2 num 2
+3 num 2
+6 string 4
