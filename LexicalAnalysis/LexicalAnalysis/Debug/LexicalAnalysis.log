@@ -1,16 +1,49 @@
-﻿  HashTableReserves.c
+﻿  automaton.c
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(28,24): warning C4477: 'fscanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 3 has type 'int *'
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(28,24): message : this argument is used as a buffer size
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(28,24): warning C4473: 'fscanf_s' : not enough arguments passed for format string
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(28,24): message : placeholders and their parameters expect 4 variadic arguments, but 3 were provided
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(28,24): message : the missing variadic argument 4 is required by format string '%d'
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(48,14): warning C4047: 'function': 'FILE *' differs in levels of indirection from 'FILE **'
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(48,9): warning C4024: 'fclose': different types for formal and actual parameter 1
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(71,28): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(74,24): warning C4477: 'fscanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 3 has type 'int *'
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(74,24): message : this argument is used as a buffer size
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(74,24): warning C4473: 'fscanf_s' : not enough arguments passed for format string
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(74,24): message : placeholders and their parameters expect 4 variadic arguments, but 3 were provided
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(74,24): message : the missing variadic argument 4 is required by format string '%d'
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(97,35): warning C4047: '==': 'int' differs in levels of indirection from 'void *'
+  HashTableReserves.c
 C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(20,24): warning C4473: 'fscanf_s' : not enough arguments passed for format string
 C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(20,24): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
 C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(20,24): message : the missing variadic argument 2 is required by format string '%s'
 C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(20,24): message : this argument is used as a buffer size
 C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(29,11): warning C4013: 'myStrcpy' undefined; assuming extern returning int
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(84,23): warning C4047: 'function': 'FILE *const ' differs in levels of indirection from 'FILE **'
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(84,18): warning C4024: 'fscanf_s': different types for formal and actual parameter 1
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(84,25): warning C4477: 'fscanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 2 has type 'int *'
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(84,25): message : this argument is used as a buffer size
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(84,25): warning C4473: 'fscanf_s' : not enough arguments passed for format string
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(84,25): message : placeholders and their parameters expect 3 variadic arguments, but 2 were provided
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(84,25): message : the missing variadic argument 3 is required by format string '%d'
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(88,14): warning C4047: 'function': 'FILE *' differs in levels of indirection from 'FILE **'
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(88,9): warning C4024: 'fclose': different types for formal and actual parameter 1
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(85,23): warning C4047: 'function': 'FILE *const ' differs in levels of indirection from 'FILE **'
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(85,18): warning C4024: 'fscanf_s': different types for formal and actual parameter 1
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(85,25): warning C4477: 'fscanf_s' : format string '%s' requires an argument of type 'unsigned int', but variadic argument 2 has type 'int *'
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(85,25): message : this argument is used as a buffer size
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(85,25): warning C4473: 'fscanf_s' : not enough arguments passed for format string
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(85,25): message : placeholders and their parameters expect 3 variadic arguments, but 2 were provided
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(85,25): message : the missing variadic argument 3 is required by format string '%d'
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(89,14): warning C4047: 'function': 'FILE *' differs in levels of indirection from 'FILE **'
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(89,9): warning C4024: 'fclose': different types for formal and actual parameter 1
+  Main.c
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(32,29): warning C4013: 'HashFunc' undefined; assuming extern returning int
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(44,20): warning C4013: 'switchToAutomatic' undefined; assuming extern returning int
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(59,24): warning C4473: 'fscanf_s' : not enough arguments passed for format string
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(59,24): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(59,24): message : the missing variadic argument 2 is required by format string '%c'
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(59,24): message : this argument is used as a buffer size
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(66,11): warning C4013: 'HashTable' undefined; assuming extern returning int
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(67,14): warning C4013: 'FillingTypes' undefined; assuming extern returning int
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(68,9): warning C4013: 'filling' undefined; assuming extern returning int
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(69,7): warning C4013: 'final' undefined; assuming extern returning int
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(95,21): warning C4013: 'myStrlen' undefined; assuming extern returning int
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(99,16): warning C4305: '=': truncation from 'int' to 'char'
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(105,16): warning C4305: '=': truncation from 'int' to 'char'
+  Generating Code...
+  string.h
+  HashTableReservesStruct.h
+  Generating Code...
   LexicalAnalysis.vcxproj -> C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\Debug\LexicalAnalysis.exe
