@@ -61,8 +61,9 @@ void endWord() {
 	}
 }
 void main() {
-	
+
 	//createTokenחלוקה ללקסמות ושליחה לפונקציה
+	DeclareStruct();
 	HashTable();
 	FillingTypes();
 	filling();

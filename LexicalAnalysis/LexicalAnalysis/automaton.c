@@ -25,7 +25,7 @@ void filling()
 		printf("Error open file\n");
 		exit(1);
 	}
-	while (fscanf_s(file, "%d %s %d", &situation, by, &gotos) != EOF) {
+	while (fscanf_s(file, "%d %s %d", &situation, by,6, &gotos) != EOF) {
 		if (mone - 1 < situation) {
 			arrAutom = (int**)realloc(&arrAutom, sizeof(int*) * mone + 1);
 			if (arrAutom == NULL) {
@@ -45,7 +45,7 @@ void filling()
 		}
 		arrAutom[situation][location(by[0])] = gotos;
 	}
-	fclose(&file);
+	fclose(file);
 }
 
 //פןנקציה הממלאה את מערך המצבים הסופיים
@@ -71,7 +71,7 @@ void final()
 		arrFinal[i].str[0] = NULL;
 		arrFinal[i].num = -1;
 	}
-	while (fscanf_s(file, "%d %s %d", &num, token,&num2) != EOF) {
+	while (fscanf_s(file, "%d %s %d", &num, token,10,&num2) != EOF) {
 		myStrcpy(arrFinal[num].str , token);
 		arrFinal[num].num = num2;
 	}

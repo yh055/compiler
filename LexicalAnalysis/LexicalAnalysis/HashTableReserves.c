@@ -1,10 +1,19 @@
 #include "HashTableReserves.h"
+UniformPtr HashUniform[101];
+char** types;
+void DeclareStruct()
+{
+	for (size_t i = 0; i < 101; i++)
+	{
+		HashUniform[i] = NULL;
+	}
+}
 
 
 //פונקציה שקוראת מקובץ סוגי הטוקנים וממלאה במערך
 void FillingTypes() {
 	int sizeTypes = 10;
-	types = (char**)malloc(sizeTypes * sizeof(char[20]));
+	types = (char**)malloc(sizeTypes * sizeof(char*));
 	int i=0;
 	if (types == NULL) {
 		printf("Memory not allocated\n");
@@ -17,7 +26,7 @@ void FillingTypes() {
 		printf("Error open file\n");
 		exit(1);
 	}
-	while (fscanf_s(file, "%s", &type) != EOF) {
+	while (fscanf_s(file, "%s", type ,30) != EOF) {
 		if (i == sizeTypes) {
 			sizeTypes = sizeTypes * 2;
 			types = (char**)realloc(&types, sizeTypes * sizeof(char[20]));
@@ -26,6 +35,7 @@ void FillingTypes() {
 				exit(1);
 			}
 		}
+		types[i] = (char*)malloc(20 * sizeof(char));
 		myStrcpy(types[i], type);
 		i++;
 
@@ -45,25 +55,28 @@ int HashFunc(char* word)
 }
 
 void InHash(char* word, int type) {
+	int y = HashFunc(word);
+	if (HashUniform[y] == NULL) {
+		UniformPtr up= (UniformRec*)malloc(sizeof(UniformRec));
+		HashUniform[y] = (UniformRec*)malloc(sizeof(UniformRec));
 
-	if (HashUniform[HashFunc(word)] == NULL) {
-		HashUniform[HashFunc(word)] = (UniformPtr)malloc(1 * sizeof(UniformRec));
-		if (HashUniform[HashFunc(word)] == NULL) {
+		if (HashUniform[y] == NULL) {
 			printf("Memory not allocated\n");
 			exit(1);
 		}
-		myStrcpy(HashUniform[HashFunc(word)]->str , word);
-		HashUniform[HashFunc(word)]->type = type;
-		HashUniform[HashFunc(word)]->next = (UniformPtr)malloc(1 * sizeof(UniformRec));
+	
+		myStrcpy(HashUniform[y]->str , word);
+		HashUniform[y]->type = type;
+		HashUniform[y]->next = (UniformPtr)malloc(sizeof(UniformRec));
 	}
 	else
 	{
-		UniformPtr next1 = HashUniform[HashFunc(word)]->next;
-		while (next1)
-			next1->next;
+		UniformPtr next1 = HashUniform[y];
+		while (next1->next && next1->next!=Garbage)
+			next1=next1->next;
 		myStrcpy(&next1->str , word);
 		next1->type = type;
-		next1->next = NULL;
+		next1->next = (UniformPtr)malloc(sizeof(UniformRec));
 
 	}
 
@@ -71,20 +84,21 @@ void InHash(char* word, int type) {
 // פונקציה הממלאה את טבלת הגיבוב של 
 void HashTable() {
 	char word[10];
-	int num;
+	int num=0;
 	FILE* file=NULL;
+	/*
 	for (int i = 0; i <= 100; i++) {
 		HashUniform[i] = NULL;
-	}
+	}*/
 	errno_t e= fopen_s(&file, "C:/Users/Public/Pictures/reserves.txt", "rt");
 	if (e!=0) {
 		printf("Error open file\n");
 		exit(1);
 	}
 	
-	while (fscanf_s(&file, "%s %d", word, &num) != EOF) {
+	while (fscanf_s(file, "%s %d", word, 10,&num) != EOF) {
 		
 		InHash(word, num);
 	}
-	fclose(&file);
+	fclose(file);
 }

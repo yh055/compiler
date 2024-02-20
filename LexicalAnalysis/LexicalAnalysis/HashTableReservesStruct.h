@@ -10,5 +10,5 @@ typedef struct originalRec
 	//מצביע למקום בקוד
 	struct originalRec* next;
 }originalRec, * originalPtr;
-UniformPtr HashUniform[101];
-char** types;
+extern UniformPtr HashUniform[101];
+extern char** types;
