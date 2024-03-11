@@ -67,7 +67,7 @@ void main() {
 	HashTable();
 	FillingTypes();
 	filling();
-	final();
+	final1();
 	endWord();
 	FILE* file=NULL;
 

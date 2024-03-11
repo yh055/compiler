@@ -57,7 +57,7 @@ int HashFunc(char* word)
 void InHash(char* word, int type) {
 	int y = HashFunc(word);
 	if (HashUniform[y] == NULL) {
-		UniformPtr up= (UniformRec*)malloc(sizeof(UniformRec));
+		
 		HashUniform[y] = (UniformRec*)malloc(sizeof(UniformRec));
 
 		if (HashUniform[y] == NULL) {

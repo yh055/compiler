@@ -2,6 +2,7 @@
 int** arrAutom;
 FinalPtr arrFinal ;
 int mone = 0;
+
 //פונקציה המקבלת תו ומחזירה את מקומו 
 int location(char tav) {
 	int mone = 0;
@@ -17,6 +18,7 @@ int location(char tav) {
 //פונקציה הממלאה את המטריצה בהתאם לאוטומט
 void filling()
 {
+	int** arrAutom1 = (int**)malloc(sizeof(int*) * (mone + 1));
 	char by[6];
 	int situation, gotos;
 	FILE* file=NULL;
@@ -27,29 +29,30 @@ void filling()
 	}
 	while (fscanf_s(file, "%d %s %d", &situation, by,6, &gotos) != EOF) {
 		if (mone - 1 < situation) {
-			arrAutom = (int**)realloc(&arrAutom, sizeof(int*) * mone + 1);
+			arrAutom1 = (int**)realloc(&arrAutom1, sizeof(int*) * (mone + 1));
 			if (arrAutom == NULL) {
 				printf("Memory not allocated\n");
 				exit(1);
 			}
-			arrAutom[situation] = (int*)realloc(&arrAutom[situation], sizeof(int) * LEN);
-			if (arrAutom[situation] == NULL) {
+			arrAutom1[situation] = (int*)realloc(&arrAutom1[situation], sizeof(int) * LEN);
+			if (arrAutom1[situation] == NULL) {
 				printf("Memory not allocated\n");
 				exit(1);
 			}
 			for (int i = 0; i < LEN; i++)
 			{
-				arrAutom[situation][i] = -1;
+				arrAutom1[situation][i] = -1;
 			}
 			mone++;
 		}
-		arrAutom[situation][location(by[0])] = gotos;
+		arrAutom1[situation][location(by[0])] = gotos;
 	}
 	fclose(file);
+	arrAutom = arrAutom1;
 }
 
 //פןנקציה הממלאה את מערך המצבים הסופיים
-void final()
+void final1()
 {
 	int num;
 	char token[10];

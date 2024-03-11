@@ -23,5 +23,5 @@ typedef struct
 
 int location(char tav);
 void filling();
-void final();
+void final1();
 void switchToAutomatic(char* laxma, int i, int j);
