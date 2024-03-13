@@ -13,7 +13,7 @@
 #define STRING_H
 #endif // !STRING_H
 #define sizeEnd 30
-
+#include <malloc.h>
 
 char endWordArr[sizeEnd];
 
@@ -61,7 +61,8 @@ void endWord() {
 	}
 }
 void main() {
-
+	//הגדלת גודל הערימה
+	/*heapinit(50, 100);*/
 	//createTokenחלוקה ללקסמות ושליחה לפונקציה
 	DeclareStruct();
 	HashTable();

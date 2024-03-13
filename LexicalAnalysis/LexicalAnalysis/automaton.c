@@ -34,6 +34,7 @@ void filling()
 				printf("Memory not allocated\n");
 				exit(1);
 			}
+			
 			arrAutom1[situation] = (int*)realloc(&arrAutom1[situation], sizeof(int) * LEN);
 			if (arrAutom1[situation] == NULL) {
 				printf("Memory not allocated\n");
