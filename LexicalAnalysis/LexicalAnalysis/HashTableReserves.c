@@ -11,6 +11,7 @@ void DeclareStruct()
 
 
 //פונקציה שקוראת מקובץ סוגי הטוקנים וממלאה במערך
+//ניתוח לשיעורין
 void FillingTypes() {
 	int sizeTypes = 10;
 	types = (char**)malloc(sizeTypes * sizeof(char*));

@@ -104,7 +104,7 @@ void switchToAutomatic(char* laxma,int i,int j) {
 	}
 	else {
 		//ליצור אסימון מהסוג המתאים לכתוב
-		fprintf(file, "%s %s line %d column %d", laxma, types[arrFinal[numS].num], i, j);
+		fprintf(file, "%s %s line %d column %d", laxma, arrFinal[numS].num, i, j);
 	}
 	fclose(file);
 }

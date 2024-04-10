@@ -35,7 +35,7 @@ void createToken(char* laxma, int i, int j) {
 	if (a != NULL)
 	{
 		//תיצור טוקן מסוג המילה השמורה
-		fprintf(file, "%s %s line %d column %d", a->str, types[a->type], i, j);
+		fprintf(file, "%s %s line %d column %d", a->str, a->type, i, j);
 
 	}
 	//העברה באוטומט
