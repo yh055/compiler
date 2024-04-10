@@ -75,7 +75,7 @@ void InHash(char* word, int type) {
 		UniformPtr next1 = HashUniform[y];
 		while (next1->next && next1->next!=Garbage)
 			next1=next1->next;
-		myStrcpy(&next1->str , word);
+		myStrcpy(next1->str , word);
 		next1->type = type;
 		next1->next = (UniformPtr)malloc(sizeof(UniformRec));
 
