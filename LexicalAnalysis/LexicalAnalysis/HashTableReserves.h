@@ -10,7 +10,7 @@
 #ifndef STRING_H
 #define STRING_H
 #endif // !STRING_H
-void FillingTypes();
+//void FillingTypes();
 int HashFunc(char* word);
 void InHash(char* word, int type);
 void HashTable();

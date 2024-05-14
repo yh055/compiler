@@ -1,4 +1,0 @@
-1 id 1
-2 numint 2
-3 numdouble 3
-6 string 4

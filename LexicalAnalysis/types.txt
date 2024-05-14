@@ -1,7 +1,0 @@
-Identifier
-Operator
-Constants
-Keyword
-Literals
-Punctuators
-SpecialCharaters

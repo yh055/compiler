@@ -21,9 +21,9 @@ void createToken(char* laxma, int i, int j) {
 	UniformPtr a = NULL;
 	FILE* file = NULL;
 
-	errno_t e = fopen_s(&file, "C:/Users/Public/Pictures/token.txt", "at");
+	errno_t e = fopen_s(&file, "..\..\token.txt", "at");
 	if (e!=0) {
-		printf("Error open file\n");
+		printf("Error open file token\n");
 		exit(1);
 	}
 	
@@ -51,9 +51,9 @@ void endWord() {
 	char tav;
 	FILE* file;
 	int i = 0;
-	errno_t e1 = fopen_s(&file, "C:/Users/Public/Pictures/endWord.txt", "rt");
+	errno_t e1 = fopen_s(&file, "C:/Users/Public/Pictures/Requiredfiles/endWord.txt", "rt");
 	if (e1 != 0) {
-		printf("Error open file\n");
+		printf("Error open file endWord\n");
 		exit(1);
 	}
 	while (fscanf_s(file, "%c", &tav) != EOF) {
@@ -66,7 +66,7 @@ void main() {
 	//createTokenחלוקה ללקסמות ושליחה לפונקציה
 	DeclareStruct();
 	HashTable();
-	FillingTypes();
+	/*FillingTypes();*/
 	filling();
 	final1();
 	endWord();
@@ -76,9 +76,9 @@ void main() {
 	char str[20];
 	
 	int i = 0,  j = 0,moneRow = 0, moneColumn = 0;
-	errno_t e=fopen_s(&file, "C:/Users/Public/Pictures/code.txt", "rt");
+	errno_t e=fopen_s(&file, "C:/Users/Public/Pictures/Requiredfiles/code.txt", "rt");
 	if (e!=0) {
-		printf("Error open file\n");
+		printf("Error open file code\n");
 		exit(1);
 	}
 
@@ -113,16 +113,21 @@ void main() {
 
 }
 	fclose(file);
-	errno_t e1 = fopen_s(&file, "C:/Users/Public/Pictures/token.txt", "at");
+	errno_t e1 = fopen_s(&file, "C:/Users/Public/Pictures/Requiredfiles/token.txt", "at");
 	if (e1 != 0) {
-		printf("Error open file\n");
+		printf("Error open file token\n");
 		exit(1);
 	}
 	fprintf(file, "num line is %d",moneRow);
 	//שחרור הזיכרון
-	free(types);
-	free(HashUniform);
-	//free(arrFinal);
+
+	/*free(types);*/
+	for (size_t i = 0; i < 101; i++)
+	{
+		free(HashUniform[i]);
+	}
+	
+	/*free(arrFinal);*/
 	//free(arrAutom);
 
 }

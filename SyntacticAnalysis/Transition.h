@@ -9,5 +9,5 @@ typedef struct
 {
 	TokenPtr token;
 	struct TreeNodePtr* arr;
-} TreeNode, * TreeNodePtr;
+} TreeNode, *TreeNodePtr;
 Stack s;

@@ -22,20 +22,26 @@ void filling()
 	char by[6];
 	int situation, gotos;
 	FILE* file=NULL;
-	errno_t e = fopen_s(&file, "C:/Users/Public/Pictures/automaton.txt", "rt");
+	errno_t e = fopen_s(&file, "C:/Users/Public/Pictures/Requiredfiles/automaton.txt", "rt");
 	if (e != 0) {
-		printf("Error open file\n");
+		printf("Error open file automaton\n");
 		exit(1);
 	}
+	//arrAutom = (int**)malloc(sizeof(int*) *1);
 	while (fscanf_s(file, "%d %s %d", &situation, by,6, &gotos) != EOF) {
 		if (mone - 1 < situation) {
-			arrAutom = (int**)realloc(&arrAutom, sizeof(int*) * (mone + 1));
+			arrAutom = (int**)realloc(arrAutom, sizeof(int*) * (mone + 1));
 			if (arrAutom == NULL) {
 				printf("Memory not allocated\n");
 				exit(1);
 			}
-			
-			arrAutom[situation] = (int*)realloc(&arrAutom[situation], sizeof(int) * LEN);
+			if (arrAutom[situation] == NULL) {
+				arrAutom[situation] = (int*)malloc(sizeof(int) * LEN);
+			}
+			else {
+				arrAutom[situation] = (int*)realloc(arrAutom[situation], sizeof(int) * LEN);
+			}
+			/*arrAutom[situation] = (int*)realloc(arrAutom[situation], sizeof(int) * LEN);*/
 			if (arrAutom[situation] == NULL) {
 				printf("Memory not allocated\n");
 				exit(1);
@@ -59,7 +65,7 @@ void final1()
 	char token[10];
 	int num2;
 	FILE* file=NULL;
-	errno_t e = fopen_s(&file, "C:/Users/Public/Pictures/final.txt", "rt");
+	errno_t e = fopen_s(&file, "C:/Users/Public/Pictures/Requiredfiles/final.txt", "rt");
 	if (e != 0) {
 		printf("Error open file\n");
 		exit(1);
@@ -83,7 +89,7 @@ void final1()
 //פונקצית המעבר על האוטומט ויצור טוקנים
 void switchToAutomatic(char* laxma,int i,int j) {
 	FILE* file=NULL;
-	errno_t e = fopen_s(&file, "C:/Users/Public/Pictures/token.txt", "at");
+	errno_t e = fopen_s(&file, "C:/Users/Public/Pictures/Requiredfiles/token.txt", "at");
 	if (e != 0) {
 		printf("Error open file\n");
 		exit(1);

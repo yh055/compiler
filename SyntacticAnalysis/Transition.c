@@ -1,7 +1,8 @@
 #include "Transition.h"
 int i = 0, situation = 0, dependent, mone;
-TokenPtr var, var2, reduce = NULL;
+TokenPtr var, reduce = NULL;
 TreeNodePtr node, node2, myTree;
+
 void Reduce()
 {
 	if (dependent == -999) {
@@ -9,16 +10,18 @@ void Reduce()
 		exit(1);
 	}
 	mone = 0;
+	/*node.arr = (TreeNodePtr*)malloc(sizeof(TreeNodePtr));*/
+	
 	for (size_t i = 0; i < (arrDerivation[abs(dependent)][1]); i++)
 	{
-		var2 = (TreeNodePtr)pop(&s);
-		node2->token = var2;
+		 
+		node2= (TreeNodePtr)pop(&s);
 		node->arr = NULL;
 		node->arr = (TreeNodePtr*)realloc(node->arr, sizeof(TreeNodePtr) * (++mone));
 		node->arr[mone - 1] = node2;
 		pop(&s);
 	}
-	reduce->numT = i < arrDerivation[abs(dependent)][0];
+	reduce->numT = arrDerivation[abs(dependent)][0];
 
 }
 void Shift()
@@ -92,19 +95,20 @@ TreeNodePtr TransitionOfMat()
 	free(node);
 	free(node2);
 	free(reduce);
-	free(var2);
 	free(var);
 	
 	free(arrInput);
 	free(arrMat);
 	free(arrDerivation);
 	if (! i == (sizeof(arrInput) / sizeof(arrInput[0]))) {
+		free(&s);
 		printf("Input error\n");
 		exit(1);
 	}
 	myTree = (TreeNodePtr)pop(&s);
 	if (!(isEmpty(&s)))
 	{
+		free(&s);
 		printf("Input error\n");
 		exit(1);
 	}

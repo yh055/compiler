@@ -12,7 +12,7 @@
 #define NUM(tav) ((int)tav > 47 && (int)tav < 58)
 #define DOT(tav) ((int)tav == 46)
 #define QUOTATION(tav) ((int)tav == 34)
-#define LEN 5
+#define LEN 6
 
 
 typedef struct

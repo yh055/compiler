@@ -11,4 +11,4 @@ typedef struct UniformRec
 //	struct originalRec* next;
 //}originalRec, * originalPtr;
 extern UniformPtr HashUniform[101];
-extern char** types;
+//extern char** types;
