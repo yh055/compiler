@@ -14,9 +14,15 @@ C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(55,32): warni
 C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(83,32): warning C4129: 'P': unrecognized character escape sequence
 C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(83,32): warning C4129: 'p': unrecognized character escape sequence
 C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(83,32): warning C4129: 'L': unrecognized character escape sequence
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(91,77): warning C4047: '=': 'TokenPtr' differs in levels of indirection from 'TokenPtr *'
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(93,29): error C2440: '=': cannot convert from 'int' to 'Token'
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(94,17): warning C4013: 'myStrcpy' undefined; assuming extern returning int
   Transition.c
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(15,23): error C2440: '=': cannot convert from 'Token' to 'int'
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(33,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\stack.h(42,18): warning C4047: 'return': 'void *' differs in levels of indirection from 'int'
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\stack.h(51,18): warning C4047: 'return': 'void *' differs in levels of indirection from 'int'
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(15,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(20,79): warning C4047: '=': 'TreeNodePtr *' differs in levels of indirection from 'TreeNodePtr *'
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(21,30): error C2440: '=': cannot convert from 'TreeNodePtr' to 'TreeNodePtr'
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(46,9): warning C4013: 'fillMat' undefined; assuming extern returning int
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(47,16): warning C4013: 'fillDerivation' undefined; assuming extern returning int
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(48,11): warning C4013: 'fillInput' undefined; assuming extern returning int
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(71,22): warning C4550: expression evaluates to a function which is missing an argument list
   Generating Code...

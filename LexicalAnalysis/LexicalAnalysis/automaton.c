@@ -2,7 +2,7 @@
 int** arrAutom;
 FinalPtr arrFinal ;
 int mone = 0;
-
+#define GARBAGE 0xcdcdcdcd
 //פונקציה המקבלת תו ומחזירה את מקומו 
 int location(char tav) {
 	int mone = 0;
@@ -35,7 +35,7 @@ void filling()
 				printf("Memory not allocated\n");
 				exit(1);
 			}
-			if (arrAutom[situation] == NULL) {
+			if (arrAutom[situation] == NULL || arrAutom[situation]== GARBAGE) {
 				arrAutom[situation] = (int*)malloc(sizeof(int) * LEN);
 			}
 			else {

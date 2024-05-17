@@ -8,6 +8,6 @@
 typedef struct
 {
 	TokenPtr token;
-	struct TreeNodePtr* arr;
+	TreeNodePtr arr;
 } TreeNode, *TreeNodePtr;
 Stack s;

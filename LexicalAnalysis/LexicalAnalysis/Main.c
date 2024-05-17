@@ -21,7 +21,7 @@ void createToken(char* laxma, int i, int j) {
 	UniformPtr a = NULL;
 	FILE* file = NULL;
 
-	errno_t e = fopen_s(&file, "..\..\token.txt", "at");
+	errno_t e = fopen_s(&file, "C:\\Users\\Public\\Pictures\\Requiredfiles\\token.txt", "at");
 	if (e!=0) {
 		printf("Error open file token\n");
 		exit(1);
@@ -49,6 +49,7 @@ void createToken(char* laxma, int i, int j) {
 }
 void endWord() {
 	char tav;
+	char enter;
 	FILE* file;
 	int i = 0;
 	errno_t e1 = fopen_s(&file, "C:/Users/Public/Pictures/Requiredfiles/endWord.txt", "rt");
@@ -57,6 +58,7 @@ void endWord() {
 		exit(1);
 	}
 	while (fscanf_s(file, "%c", &tav) != EOF) {
+		fscanf_s(file, "%c", &enter);
 		endWordArr[i++] = tav;
 	}
 }
@@ -73,21 +75,21 @@ void main() {
 	FILE* file=NULL;
 
 	char tav;
-	char str[20];
+	char str[255];
 	
 	int i = 0,  j = 0,moneRow = 0, moneColumn = 0;
-	errno_t e=fopen_s(&file, "C:/Users/Public/Pictures/Requiredfiles/code.txt", "rt");
+	errno_t e=fopen_s(&file, "C:\\Users\\Public\\Pictures\\Requiredfiles\\code.txt", "rt");
 	if (e!=0) {
 		printf("Error open file code\n");
 		exit(1);
 	}
 
 	
-
-	while (fgetc(file)!=EOF)
+	tav = fgetc(file);
+	while (tav!=EOF)
 	{
 	j = 0;
-	tav = fgetc(file);
+
 	
 	moneColumn++;
 	if (tav == '/n'){
@@ -96,7 +98,7 @@ void main() {
 	}
 	while (j!= myStrlen(endWordArr) &&tav!=endWordArr[j++])
 	{}
-	if (i != myStrlen(endWordArr))
+	if (i == myStrlen(endWordArr))
 	{
 		str[i] = '/0';
 		if (myStrlen(str)!=0) {
@@ -110,7 +112,7 @@ void main() {
 	else {
 		str[i++] = tav;
 	}
-
+	tav = fgetc(file);
 }
 	fclose(file);
 	errno_t e1 = fopen_s(&file, "C:/Users/Public/Pictures/Requiredfiles/token.txt", "at");

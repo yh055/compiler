@@ -46,8 +46,7 @@ TreeNodePtr TransitionOfMat()
 	fillMat();
 	fillDerivation();
 	fillInput();
-	initialize(&s);
-	//כל עוד המחסנית לא ריקה והקלט לא הסתים
+	initialize(&s);	//כל עוד המחסנית לא ריקה והקלט לא הסתים
 	while (!(isEmpty(&s)) && i != (sizeof(arrInput) / sizeof(arrInput[0]))) {
 		push(&s,(void*) &situation);
 		//להוסיף מצביעים לפונקציות
@@ -97,7 +96,7 @@ TreeNodePtr TransitionOfMat()
 	free(reduce);
 	free(var);
 	
-	free(arrInput);
+	//free(arrInput);
 	free(arrMat);
 	free(arrDerivation);
 	if (! i == (sizeof(arrInput) / sizeof(arrInput[0]))) {
