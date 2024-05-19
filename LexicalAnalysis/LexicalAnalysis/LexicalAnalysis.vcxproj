@@ -28,6 +28,7 @@
   <ItemGroup>
     <ClInclude Include="aotomaton.h" />
     <ClInclude Include="HashTableReserves.h" />
+    <ClInclude Include="mainLex.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

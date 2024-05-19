@@ -9,5 +9,6 @@ typedef struct
 {
 	TokenPtr token;
 	TreeNodePtr arr;
+	
 } TreeNode, *TreeNodePtr;
 Stack s;

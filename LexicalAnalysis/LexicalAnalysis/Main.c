@@ -1,19 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#ifndef HASHTABLERESERVES_C
-#define HASHTABLERESERVES_C
-#endif // !HASHTABLERESERVES_C
-#include "HashTableReservesStruct.h"
-
-#ifndef AUTOMATON_C
-#define AUTOMATON_C
-#endif // !AUTOMATON_C
-
-#ifndef STRING_H
-#define STRING_H
-#endif // !STRING_H
-#define sizeEnd 30
-#include <malloc.h>
+#include "mainLex.h"
 
 char endWordArr[sizeEnd];
 
@@ -62,7 +47,7 @@ void endWord() {
 		endWordArr[i++] = tav;
 	}
 }
-void main() {
+void LexicalMain() {
 	//הגדלת גודל הערימה
 	/*heapinit(50, 100);*/
 	//createTokenחלוקה ללקסמות ושליחה לפונקציה

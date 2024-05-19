@@ -1,4 +1,5 @@
 #include "Transition.h"
+#include "../LexicalAnalysis/LexicalAnalysis/mainLex.h"
 int i = 0, situation = 0, dependent, mone;
 TokenPtr var, reduce = NULL;
 TreeNodePtr node, node2, myTree;
