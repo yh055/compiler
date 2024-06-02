@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#ifndef STRING_H
-#define STRING_H
+#ifndef myString_h
+#define myString_h
 #endif // !STRING_H
 #define RULES_L 190
 #define RULES_C 2
@@ -19,4 +19,4 @@ typedef struct
 	int i;
 	int j;
 }Token, * TokenPtr;
-TokenPtr* arrInput;
+extern TokenPtr* arrInput;

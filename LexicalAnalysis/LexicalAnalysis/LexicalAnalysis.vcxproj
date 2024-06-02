@@ -22,7 +22,7 @@
     <ClCompile Include="automaton.c" />
     <ClCompile Include="HashTableReserves.c" />
     <ClCompile Include="Main.c" />
-    <ClCompile Include="string.h" />
+    <ClCompile Include="myString.h" />
     <ClCompile Include="HashTableReservesStruct.h" />
   </ItemGroup>
   <ItemGroup>

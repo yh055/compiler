@@ -1,13 +1,17 @@
 #pragma once
 #define _CRT_SECURE_NO_WARNINGS
 #define _CRT_SECURE_NO_DEPRECATE
-#ifndef  HashTableReserves_c
-#define HashTableReserves_c
-#endif // ! HashTableReserves_c
-#include "string.h"
+//#ifndef  HashTableReserves_h
+//#define HashTableReserves_h
+//#endif // ! HashTableReserves_c
 #include <stdio.h>
 #include <stdlib.h>
-#include "HashTableReservesStruct.h"
+#include "HashTableReserves.h"
+#ifndef myString_h
+#define myString_h
+#endif // !STRING_H
+
+
 #define LETTER(tav) ((int)tav > 96 && (int)tav < 123)
 #define NUM(tav) ((int)tav > 47 && (int)tav < 58)
 #define DOT(tav) ((int)tav == 46)

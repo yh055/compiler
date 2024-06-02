@@ -24,7 +24,7 @@
     <ClCompile Include="automaton.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="string.h">
+    <ClCompile Include="myString.h">
       <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="HashTableReservesStruct.h">

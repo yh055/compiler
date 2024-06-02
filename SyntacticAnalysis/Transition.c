@@ -3,7 +3,8 @@
 int i = 0, situation = 0, dependent, mone;
 TokenPtr var, reduce = NULL;
 TreeNodePtr node, node2, myTree;
-
+TokenPtr* arrInput;
+Stack1 s;
 void Reduce()
 {
 	if (dependent == -999) {
@@ -118,3 +119,4 @@ TreeNodePtr TransitionOfMat()
 	return myTree;
 }
 
+int main() {}

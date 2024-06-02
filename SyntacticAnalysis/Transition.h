@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "stack.h"
+#include "stack1.h"
 #include "Metrix.h"
 #define REDUCE(x) x<=0
 
 #define REDUCEFILL(x) x!= NULL
-typedef struct
+
+typedef struct TreeNode1
 {
 	TokenPtr token;
-	TreeNodePtr arr;
+	struct TreeNode1** arr;
 	
 } TreeNode, *TreeNodePtr;
-Stack s;

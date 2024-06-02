@@ -1,12 +1,13 @@
 #include "mainLex.h"
 
-char endWordArr[sizeEnd];
 
-void createToken(char* laxma, int i, int j) {
+char endWordArr[sizeEnd];
+void createToken(char *laxma, int i, int j) {
+
 	UniformPtr a = NULL;
 	FILE* file = NULL;
 
-	errno_t e = fopen_s(&file, "C:\\Users\\Public\\Pictures\\Requiredfiles\\token.txt", "at");
+	errno_t e = fopen_s(&file, "C:\\Users\\Public\\Pictures\\Requiredfiles\\token.txt", "wt");
 	if (e!=0) {
 		printf("Error open file token\n");
 		exit(1);
@@ -14,8 +15,15 @@ void createToken(char* laxma, int i, int j) {
 	
 	//hashבדיקה האם קיימת ב
 	//צריך לעבור על כל הרשימה של המקום הזה
-	while (HashUniform[HashFunc(laxma)]->next && HashUniform[HashFunc(laxma)]->str != laxma) {
-		a = HashUniform[HashFunc(laxma)]->next;
+	/*if (*(HashUniform[79]->str) == laxma) {
+		printf("mmmmm\n");
+	}*/
+	
+	
+	int iii = HashFunc(laxma);
+	a = HashUniform[iii];
+	while (a->next!= Garbage && myStrcmp(a->str , laxma)!=0) {
+		a = a->next;
 	}
 	if (a != NULL)
 	{
@@ -60,7 +68,7 @@ void LexicalMain() {
 	FILE* file=NULL;
 
 	char tav;
-	char str[255];
+	char str[25];
 	
 	int i = 0,  j = 0,moneRow = 0, moneColumn = 0;
 	errno_t e=fopen_s(&file, "C:\\Users\\Public\\Pictures\\Requiredfiles\\code.txt", "rt");
@@ -81,17 +89,19 @@ void LexicalMain() {
 		moneRow++;
 		moneColumn = 0;
 	}
+	//כל עוד התו שונה מהתוים המסיימים
 	while (j!= myStrlen(endWordArr) &&tav!=endWordArr[j++])
 	{}
-	if (i == myStrlen(endWordArr))
+	//אם התו שווה לאחד מהתוים המסיימים
+	if (j != myStrlen(endWordArr))
 	{
-		str[i] = '/0';
+		str[i] = '\0';
 		if (myStrlen(str)!=0) {
 			
 			createToken(str, moneRow, moneColumn - myStrlen(str));
 		}
 		createToken(&tav, moneRow, moneColumn);
-		str[0] = '/0';
+		str[0] = '\0';
 		i = 0;
 	}
 	else {
@@ -118,8 +128,14 @@ void LexicalMain() {
 	//free(arrAutom);
 
 }
+int main(){
+	
+	
+	LexicalMain();
 
 
+	return 0;
+}
 	
 
 

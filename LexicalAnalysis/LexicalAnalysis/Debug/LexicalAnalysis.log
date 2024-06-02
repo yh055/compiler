@@ -1,40 +1,21 @@
-﻿  automaton.c
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(38,58): warning C4047: '==': 'int *' differs in levels of indirection from 'unsigned int'
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(81,22): warning C4047: '=': 'char' differs in levels of indirection from 'void *'
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(107,28): warning C4047: '==': 'int' differs in levels of indirection from 'void *'
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\automaton.c(113,17): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
-  HashTableReserves.c
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(69,3): warning C4013: 'myStrcpy' undefined; assuming extern returning int
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\HashTableReserves.c(76,36): warning C4047: '!=': 'UniformRec *' differs in levels of indirection from 'unsigned int'
-  Main.c
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(32,21): warning C4013: 'HashFunc' undefined; assuming extern returning int
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(38,17): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(44,3): warning C4013: 'switchToAutomatic' undefined; assuming extern returning int
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(60,24): warning C4473: 'fscanf_s' : not enough arguments passed for format string
-  C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(60,24):
+﻿  Main.c
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(25,16): warning C4047: '!=': 'UniformRec *' differs in levels of indirection from 'unsigned int'
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(31,17): warning C4477: 'fprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'int'
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(53,24): warning C4473: 'fscanf_s' : not enough arguments passed for format string
+  C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(53,24):
   placeholders and their parameters expect 2 variadic arguments, but 1 were provided
-  C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(60,24):
+  C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(53,24):
   the missing variadic argument 2 is required by format string '%c'
-  C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(60,24):
+  C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(53,24):
   this argument is used as a buffer size
   
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(61,18): warning C4473: 'fscanf_s' : not enough arguments passed for format string
-  C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(61,18):
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(54,18): warning C4473: 'fscanf_s' : not enough arguments passed for format string
+  C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(54,18):
   placeholders and their parameters expect 2 variadic arguments, but 1 were provided
-  C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(61,18):
+  C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(54,18):
   the missing variadic argument 2 is required by format string '%c'
-  C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(61,18):
+  C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(54,18):
   this argument is used as a buffer size
   
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(69,2): warning C4013: 'DeclareStruct' undefined; assuming extern returning int
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(70,2): warning C4013: 'HashTable' undefined; assuming extern returning int
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(72,2): warning C4013: 'filling' undefined; assuming extern returning int
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(73,2): warning C4013: 'final1' undefined; assuming extern returning int
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(99,13): warning C4013: 'myStrlen' undefined; assuming extern returning int
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(103,12): warning C4305: '=': truncation from 'int' to 'char'
-C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(109,12): warning C4305: '=': truncation from 'int' to 'char'
-  Generating Code...
-  string.h
-  HashTableReservesStruct.h
-  Generating Code...
+C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\LexicalAnalysis\Main.c(62,2): warning C4013: 'DeclareStruct' undefined; assuming extern returning int
   LexicalAnalysis.vcxproj -> C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\Debug\LexicalAnalysis.exe

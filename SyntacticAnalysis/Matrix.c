@@ -1,7 +1,10 @@
 #include "Metrix.h"
+#include "../LexicalAnalysis/LexicalAnalysis/myString.h"
+TokenPtr* arrInput;
 //מילוי המטריצה בצורה דינמית ע"י מעבר על הקובץ
 void fillMat() {
-    file = fopen("C:/Users/יעל חדד\Pictures\mat.csv", "r");
+    FILE* file=NULL;
+    errno_t er = fopen_s(file,"C:/Users/יעל חדד\Pictures\mat.csv", "r");
     if (file == NULL) {
         printf("Error opening file.\n");
         return 1;
@@ -79,7 +82,7 @@ void fillInput()
     int numT, i, j, mone = 5,k=0;
     arrInput = malloc(sizeof(TokenPtr*) * mone);
     
-    char* lexma;
+    char* lexma="";
     errno_t e = fopen_s(&file, "C:/Users/יעל חדד\Pictures\project\LexicalAnalysis\token.txt", "rt");
     if (e != 0) {
         printf("Error open file\n");

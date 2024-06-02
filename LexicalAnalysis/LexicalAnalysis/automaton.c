@@ -101,12 +101,13 @@ void switchToAutomatic(char* laxma,int i,int j) {
 		if (numS == -1) {
 			//לזרוק אסימון שגיאה
 			fprintf(file, "Error -1 line %d column %d", i, j);
-			
+			exit(1);
 		}
     }
 	if (arrFinal[numS].str[0] == NULL) {
 		//לזרוק אסימון שגיאה
 		fprintf(file, "Error -1 line %d column %d",i,j );
+		exit(1);
 	}
 	else {
 		//ליצור אסימון מהסוג המתאים לכתוב

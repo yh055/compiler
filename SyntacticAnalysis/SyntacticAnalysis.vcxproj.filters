@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stack.h">
+    <ClInclude Include="stack1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Metrix.h">
@@ -26,14 +26,17 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Matrix.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Transition.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="stack1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

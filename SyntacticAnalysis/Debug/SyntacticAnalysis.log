@@ -1,28 +1,24 @@
-﻿  Main.c
-  Matrix.c
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(4,18): warning C4129: 'P': unrecognized character escape sequence
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(4,18): warning C4129: 'm': unrecognized character escape sequence
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(7,17): warning C4098: 'fillMat': 'void' function returning a value
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(15,31): warning C4013: 'my_strtok' undefined; assuming extern returning int
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(18,42): warning C4047: '=': 'int' differs in levels of indirection from 'char *'
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(19,40): warning C4047: '=': 'char *' differs in levels of indirection from 'int'
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(4,12): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(15,1): warning C4047: 'initializing': 'char *' differs in levels of indirection from 'int'
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(55,32): warning C4129: 'P': unrecognized character escape sequence
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(55,32): warning C4129: 'p': unrecognized character escape sequence
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(55,32): warning C4129: 'd': unrecognized character escape sequence
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(83,32): warning C4129: 'P': unrecognized character escape sequence
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(83,32): warning C4129: 'p': unrecognized character escape sequence
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(83,32): warning C4129: 'L': unrecognized character escape sequence
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(94,17): warning C4013: 'myStrcpy' undefined; assuming extern returning int
+﻿  Matrix.c
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(7,30): warning C4047: 'function': 'FILE **' differs in levels of indirection from 'FILE *'
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(7,26): warning C4024: 'fopen_s': different types for formal and actual parameter 1
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(7,31): warning C4129: 'P': unrecognized character escape sequence
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(7,31): warning C4129: 'm': unrecognized character escape sequence
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(10,17): warning C4098: 'fillMat': 'void' function returning a value
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(21,42): warning C4047: '=': 'int' differs in levels of indirection from 'char *'
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(58,32): warning C4129: 'P': unrecognized character escape sequence
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(58,32): warning C4129: 'p': unrecognized character escape sequence
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(58,32): warning C4129: 'd': unrecognized character escape sequence
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(86,32): warning C4129: 'P': unrecognized character escape sequence
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(86,32): warning C4129: 'p': unrecognized character escape sequence
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Matrix.c(86,32): warning C4129: 'L': unrecognized character escape sequence
+  stack1.c
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\stack1.c(31,18): warning C4047: 'return': 'void *' differs in levels of indirection from 'int'
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\stack1.c(40,18): warning C4047: 'return': 'void *' differs in levels of indirection from 'int'
   Transition.c
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\stack.h(42,18): warning C4047: 'return': 'void *' differs in levels of indirection from 'int'
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\stack.h(51,18): warning C4047: 'return': 'void *' differs in levels of indirection from 'int'
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(15,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(20,79): warning C4047: '=': 'TreeNodePtr *' differs in levels of indirection from 'TreeNodePtr *'
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(21,30): error C2440: '=': cannot convert from 'TreeNodePtr' to 'TreeNodePtr'
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(46,9): warning C4013: 'fillMat' undefined; assuming extern returning int
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(47,16): warning C4013: 'fillDerivation' undefined; assuming extern returning int
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(48,11): warning C4013: 'fillInput' undefined; assuming extern returning int
-C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(71,22): warning C4550: expression evaluates to a function which is missing an argument list
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(17,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(48,9): warning C4013: 'fillMat' undefined; assuming extern returning int
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(49,16): warning C4013: 'fillDerivation' undefined; assuming extern returning int
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(50,11): warning C4013: 'fillInput' undefined; assuming extern returning int
+C:\Users\יעל חדד\Pictures\project\SyntacticAnalysis\Transition.c(72,22): warning C4550: expression evaluates to a function which is missing an argument list
   Generating Code...
+  SyntacticAnalysis.vcxproj -> C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\Debug\SyntacticAnalysis.exe
