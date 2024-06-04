@@ -21,35 +21,12 @@ void fillMat() {
             arrMat[numL - 1][numC-1]=line;
             line = my_strtok(NULL, ",");
         }
-        /*if (numC < temp_cols) {
-            numC = temp_cols;
-        }*/
+       
+    
    
     }
 
-    //// הקצאת זיכרון למטריצה
-    //arrMat = malloc(sizeof(int*) * numL);
-    //if (arrMat == NULL) {
-    //    perror("Error allocating memory");
-    //    return 1;
-    //}
-    //for (int i = 0; i < numL; i++) {
-    //    arrMat[i] = malloc(sizeof(int) * numC);
-    //    if (arrMat[i] == NULL) {
-    //        perror("Error allocating memory");
-    //        return 1;
-    //    }
-    //}
 
-    //// קריאת מספרים מהקובץ והעתקתם למטריצה
-    //rewind(file);
-    //for (int i = 0; i < numL; i++) {
-    //    for (int j = 0; j < numC; j++) {
-    //        fscanf(file, "%d", &arrMat[i][j]);
-    //    }
-    //}
-
-    // סגירת קובץ
     fclose(file);
 }
 //ממלא את מערך חוקי הגזירה

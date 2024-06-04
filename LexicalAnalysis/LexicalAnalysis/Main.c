@@ -13,11 +13,7 @@ void createToken(char *laxma, int i, int j) {
 		exit(1);
 	}
 	
-	//hashבדיקה האם קיימת ב
-	//צריך לעבור על כל הרשימה של המקום הזה
-	/*if (*(HashUniform[79]->str) == laxma) {
-		printf("mmmmm\n");
-	}*/
+
 	
 	
 	int iii = HashFunc(laxma);
@@ -56,12 +52,10 @@ void endWord() {
 	}
 }
 void LexicalMain() {
-	//הגדלת גודל הערימה
-	/*heapinit(50, 100);*/
-	//createTokenחלוקה ללקסמות ושליחה לפונקציה
+
 	DeclareStruct();
 	HashTable();
-	/*FillingTypes();*/
+	
 	filling();
 	final1();
 	endWord();
@@ -116,16 +110,13 @@ void LexicalMain() {
 		exit(1);
 	}
 	fprintf(file, "num line is %d",moneRow);
-	//שחרור הזיכרון
-
-	/*free(types);*/
+	
 	for (size_t i = 0; i < 101; i++)
 	{
 		free(HashUniform[i]);
 	}
 	
-	/*free(arrFinal);*/
-	//free(arrAutom);
+	
 
 }
 int main(){
@@ -134,7 +125,7 @@ int main(){
 	LexicalMain();
 
 
-	return 0;
+	
 }
 	
 

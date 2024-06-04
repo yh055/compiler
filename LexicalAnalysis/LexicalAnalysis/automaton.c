@@ -18,7 +18,7 @@ int location(char tav) {
 //פונקציה הממלאה את המטריצה בהתאם לאוטומט
 void filling()
 {
-	/* arrAutom = (int**)malloc(sizeof(int*) * (mone + 1));*/
+
 	char by[6];
 	int situation, gotos;
 	FILE* file=NULL;
@@ -41,7 +41,7 @@ void filling()
 			else {
 				arrAutom[situation] = (int*)realloc(arrAutom[situation], sizeof(int) * LEN);
 			}
-			/*arrAutom[situation] = (int*)realloc(arrAutom[situation], sizeof(int) * LEN);*/
+			
 			if (arrAutom[situation] == NULL) {
 				printf("Memory not allocated\n");
 				exit(1);
@@ -55,7 +55,7 @@ void filling()
 		arrAutom[situation][location(by[0])] = gotos;
 	}
 	fclose(file);
-	/*arrAutom = arrAutom1;*/
+
 }
 
 //פןנקציה הממלאה את מערך המצבים הסופיים

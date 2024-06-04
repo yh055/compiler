@@ -12,7 +12,7 @@ void Reduce()
 		exit(1);
 	}
 	mone = 0;
-	/*node.arr = (TreeNodePtr*)malloc(sizeof(TreeNodePtr));*/
+
 	
 	for (size_t i = 0; i < (arrDerivation[abs(dependent)][1]); i++)
 	{
@@ -51,46 +51,15 @@ TreeNodePtr TransitionOfMat()
 	initialize(&s);	//כל עוד המחסנית לא ריקה והקלט לא הסתים
 	while (!(isEmpty(&s)) && i != (sizeof(arrInput) / sizeof(arrInput[0]))) {
 		push(&s,(void*) &situation);
-		//להוסיף מצביעים לפונקציות
-	/*	if (!reduce) {
-			var = arrInput[i++];
-		}
-		else {
-			var = reduce;
-			reduce = NULL;
-		}*/
+
 		function_pointers2[REDUCEFILL(reduce)];
 		//משתנה שיתכן שהוא shift/reduce/acc
 		dependent = arrMat[situation][var->numT];
-		//acc
-		/*if (var == 0) {
-			return i == (sizeof(arrInput) / sizeof(arrInput[0]));
-		}*/
-		//shift
+		
 		node->token=var;
 		node->arr = NULL;
 		*function_pointers1[REDUCE(dependent)];
-		/*if (dependent > 0) {
-			push(&s, (void*) &node);
-			situation = dependent;
-		}
-		else {
-			if (dependent == -999) {
-				printf("Input error\n");
-				exit(1);
-			}
-			mone = 0;
-			for (size_t i = 0; i < (arrDerivation[abs(dependent)][1]); i++)
-			{
-				var2 = (TreeNodePtr)pop(&s);
-				node2->token = var2;
-				node->arr = NULL;
-				node->arr = (TreeNodePtr*)realloc(node->arr, sizeof(TreeNodePtr) * (++mone));
-				node->arr[mone-1] = node2;
-				pop(&s);
-			}
-			reduce->numT = i < arrDerivation[abs(dependent)][0];
-		}*/
+	
 
 	}
 	free(node);
@@ -98,7 +67,7 @@ TreeNodePtr TransitionOfMat()
 	free(reduce);
 	free(var);
 	
-	//free(arrInput);
+	
 	free(arrMat);
 	free(arrDerivation);
 	if (! i == (sizeof(arrInput) / sizeof(arrInput[0]))) {

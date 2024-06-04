@@ -1,6 +1,6 @@
 #include "HashTableReserves.h"
 UniformPtr HashUniform[101];
-//char** types;
+
 void DeclareStruct()
 {
 	for (size_t i = 0; i < 101; i++)
@@ -10,39 +10,7 @@ void DeclareStruct()
 }
 
 
-//פונקציה שקוראת מקובץ סוגי הטוקנים וממלאה במערך
-//ניתוח לשיעורין
-//void FillingTypes() {
-//	int sizeTypes = 10;
-//	types = (char**)malloc(sizeTypes * sizeof(char*));
-//	int i=0;
-//	if (types == NULL) {
-//		printf("Memory not allocated\n");
-//		exit(1);
-//	}
-//	char type[30];
-//	FILE* file=NULL;
-//	errno_t e = fopen_s(&file, "C:/Users/Public/Pictures/types.txt", "rt");
-//	if (e!=0) {
-//		printf("Error open file\n");
-//		exit(1);
-//	}
-//	while (fscanf_s(file, "%s", type ,30) != EOF) {
-//		if (i == sizeTypes) {
-//			sizeTypes = sizeTypes * 2;
-//			types = (char**)realloc(&types, sizeTypes * sizeof(char[20]));
-//			if (types == NULL) {
-//				printf("Memory not allocated\n");
-//				exit(1);
-//			}
-//		}
-//		types[i] = (char*)malloc(20 * sizeof(char));
-//		myStrcpy(types[i], type);
-//		i++;
-//
-//	}
-//}
-//פונקצית הגיבוב
+
 int HashFunc(char* word)
 {
 	int num=0, i = 0, j = 1;
@@ -87,10 +55,7 @@ void HashTable() {
 	char word[10];
 	int num=0;
 	FILE* file=NULL;
-	/*
-	for (int i = 0; i <= 100; i++) {
-		HashUniform[i] = NULL;
-	}*/
+	
 	errno_t e= fopen_s(&file, "C:/Users/Public/Pictures/Requiredfiles/reserves.txt", "rt");
 	if (e!=0) {
 		printf("Error open file reserves\n");

@@ -9,7 +9,7 @@
 
 #include "HashTableReservesStruct.h"
 
-//void FillingTypes();
+
 int HashFunc(char* word);
 void InHash(char* word, int type);
 void HashTable();
