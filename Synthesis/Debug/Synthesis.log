@@ -1,0 +1,5 @@
+﻿  Translate.c
+C:\Users\יעל חדד\Pictures\project\Synthesis\Translate.c(63,42): warning C4047: '==': 'char [20]' differs in levels of indirection from 'int'
+C:\Users\יעל חדד\Pictures\project\Synthesis\Translate.c(79,29): warning C4047: '=': 'TreeNodePtr' differs in levels of indirection from 'TreeNode1 **'
+C:\Users\יעל חדד\Pictures\project\Synthesis\Translate.c(66,1): warning C4047: 'initializing': 'TreeNodePtr' differs in levels of indirection from 'TreeNode1 **'
+  Synthesis.vcxproj -> C:\Users\יעל חדד\Pictures\project\LexicalAnalysis\Debug\Synthesis.exe
